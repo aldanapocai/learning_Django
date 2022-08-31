@@ -1,0 +1,52 @@
+<!-- {& load static %}
+
+
+<link rel="stylesheet" href="%static 'style.css' %"> -->
+
+<!-- <h1>Hi! </h1> -->
+
+<!-- <h2>Word Counter</h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <label>Input a sentence:</label>
+    <textarea type="text" name="sentence"></textarea>
+    <input type="submit"/>
+
+
+</form>
+
+<h3>
+    The amount of words in the sentence is {{amount_of_words}}
+</h3> -->
+
+
+<!-- POST is used for security, all data is secured, thats why we need  {% csrf_token %} --
+    Cuando googleamos (seach engine) we use get method. 
+    POST method for example card information
+
+    ORM 
+    > -->
+
+
+
+
+<!-- {% for school in schools  %}
+{% if school.is_private == True %}
+<h1>{{ school.name }}</h1>
+{% endif %}
+{% endfor %} -->
+<h2>URL Shortener</h2>
+
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" name="link"/>
+    <input type="submit"/>
+</form>
+
+
+{% if unique_id %}
+<h3>http://127.0.0.1:8000/{{ unique_id }}</h3>
+{% endif %}
